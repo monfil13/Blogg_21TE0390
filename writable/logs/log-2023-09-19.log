@@ -1,0 +1,84 @@
+ERROR - 2023-09-19 14:36:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`blogg`.`posts`, CONSTRAINT `autor` FOREIGN KEY (`autor`) REFERENCES `users` (`id`)) in C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `po...', 0)
+#1 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `po...')
+#2 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `po...')
+#3 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `po...', NULL, false)
+#4 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\app\Database\Seeds\PostSeeder.php(33): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\Seeder.php(146): App\Database\Seeds\PostSeeder->run()
+#7 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-09-19 14:40:41 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`blogg`.`posts`, CONSTRAINT `autor` FOREIGN KEY (`autor`) REFERENCES `users` (`id`)) in C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `po...', 0)
+#1 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `po...')
+#2 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `po...')
+#3 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `po...', NULL, false)
+#4 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\app\Database\Seeds\PostSeeder.php(33): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\Seeder.php(146): App\Database\Seeds\PostSeeder->run()
+#7 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-09-19 15:10:23 --> mysqli_sql_exception: Unknown column 'posts' in 'field list' in C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', NULL, false)
+#4 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\app\Database\Seeds\CommentSeeder.php(30): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\Seeder.php(146): App\Database\Seeds\CommentSeeder->run()
+#7 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-09-19 15:10:59 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`blogg`.`comments`, CONSTRAINT `post` FOREIGN KEY (`post`) REFERENCES `posts` (`id`)) in C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', NULL, false)
+#4 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\app\Database\Seeds\CommentSeeder.php(30): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\Seeder.php(146): App\Database\Seeds\CommentSeeder->run()
+#7 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-09-19 15:12:20 --> mysqli_sql_exception: Unknown column 'posts' in 'field list' in C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', NULL, false)
+#4 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\app\Database\Seeds\CommentSeeder.php(30): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\Seeder.php(146): App\Database\Seeds\CommentSeeder->run()
+#7 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-09-19 15:12:45 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`blogg`.`comments`, CONSTRAINT `post` FOREIGN KEY (`post`) REFERENCES `posts` (`id`)) in C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', NULL, false)
+#4 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\app\Database\Seeds\CommentSeeder.php(30): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Database\Seeder.php(146): App\Database\Seeds\CommentSeeder->run()
+#7 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\Daniel Monfil\Documents\TEC INF ''A''\5TO SEMESTRE 2023\Taller Base de Datos\blogg_21te0390\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
